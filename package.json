@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "**Instructor:** Stephen Grider",
   "main": "index.js",
-  "engines": {
-    "node": "15.13.0",
-    "npm": "7.8"
-  },
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
