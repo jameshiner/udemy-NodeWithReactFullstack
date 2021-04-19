@@ -1,0 +1,34 @@
+{
+  "name": "udemy-nodewithreactfullstack",
+  "version": "1.0.0",
+  "description": "**Instructor:** Stephen Grider",
+  "main": "index.js",
+  "engines": {
+    "node": "15.13.0",
+    "npm": "7.8"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameshiner/udemy-NodeWithReactFullstack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameshiner/udemy-NodeWithReactFullstack/issues"
+  },
+  "homepage": "https://github.com/jameshiner/udemy-NodeWithReactFullstack#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.23.2",
+    "nodemon": "^2.0.7"
+  }
+}
