@@ -23,6 +23,7 @@ passport.deserializeUser(async (id, done) => {
 passport.use(new GoogleStrategy({
   ...googleOAuth,
   callbackURL: '/auth/google/callback',
+  proxy: true,
 }, async (accessToken, refreshToken, profile, done) => {
   // accessToken => used to prove to google we have permissions to their acct
   // refreshToken => used to update the accessToken if it expires
