@@ -14,16 +14,20 @@ module.exports = (app) => {
     '/auth/google/callback',
     // callback will have a user specific code in the URL to be used by passport
     passport.authenticate('google'),
+    // after passport middleware above finishes, it passes request to the next handler in the chain
+    (req, res) => {
+      res.redirect('/surveys');
+    },
   );
 
   app.get('/api/user/', (req, res) => {
     const { user } = req;
-    res.send(user || 'You are not logged in.');
+    res.send(user);
   });
 
   app.get('/api/user/logout', (req, res) => {
     // provided by passport - removes the req.user property and clears the login session if any
     req.logout();
-    res.send(req.user);
+    res.redirect('/');
   });
 };
